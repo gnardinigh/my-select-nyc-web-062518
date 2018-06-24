@@ -5,8 +5,11 @@ def my_select(collection)
   i=0
   a=Array.new
   while i<collection.size
-    a[i] = yield collection[i]
+    if yield collection[i]==true
+      a[i]=collection[i]
+    end
     i+=1
+    
   end
   a
 end
