@@ -9,7 +9,6 @@ def my_select(collection)
       a << collection[i]
     end
     i+=1
-    
   end
   a
 end
