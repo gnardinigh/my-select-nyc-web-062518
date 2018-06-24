@@ -6,7 +6,10 @@ def my_select(collection)
   a=Array.new
   while i<collection.size
     bool = yield collection[i]
-    
+    if bool
+      a << collection[i]
+    end
+    i+=1
   end
   a
 end
